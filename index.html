@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TÜREVHAN</title>
+    <style>
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            padding: 3rem;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            background-color: #161b22;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+        }
+        h1 {
+            color: #58a6ff;
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        p {
+            color: #8b949e;
+            font-size: 1.3rem;
+        }
+        .loader {
+            margin-top: 2rem;
+            border: 3px solid #30363d;
+            border-top: 3px solid #58a6ff;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            display: inline-block;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>TÜREVHAN</h1>
+        <p>Notlara yönlendiriliyorsunuz...</p>
+        <div class="loader"></div>
+    </div>
+
+    <script>
+        
+        const hedef = "https://drive.google.com/drive/folders/1IqUyHxMlirhOeS2UbA1YGULIc9hHKS8T?usp=sharing"; 
+        
+       
+        setTimeout(() => { 
+            window.location.href = hedef; 
+        }, 5000);
+    </script>
+</body>
+</html>
